@@ -10,4 +10,6 @@ jobs:
         continue-on-error: true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+    steps:
+      uses: ryolambert/current-branch@v1.0
           
