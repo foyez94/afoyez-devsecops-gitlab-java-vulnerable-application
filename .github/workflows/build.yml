@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/current-branch@v1.0
-      - id: git_commit
       - uses: zwaldowski/git-commit-action@v1
       - run: echo "${{ steps.git_commit.outputs.sha }}"
       - uses: actions/checkout@master
